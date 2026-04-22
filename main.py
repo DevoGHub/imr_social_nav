@@ -37,7 +37,17 @@ with open("data/processed/bookstore_video0_traj.pkl", "rb") as f:
 env = Environment(traj)
 vis = Visualizer()
 
-for _ in range(200):
+max_steps=1000
+
+for _ in range(max_steps):
     env.step()
     state = env.get_state()
     vis.render(state)
+
+    if env.robot.reached_goal():
+        print("Goal reached!")
+        break
+
+    if env.robot.is_stuck():
+        print("Goal unreachable due to crowd")
+        break
