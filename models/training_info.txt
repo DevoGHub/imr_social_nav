@@ -1,0 +1,165 @@
+Train size: 129281
+Test size: 68424
+Video1 size: 141756
+Coupa size: 81833
+
+            Epoch 1/20
+            Train Loss: 3.8763
+
+            Test (video0 split): ADE 1.332, FDE 2.210
+            Video1 (same scene): ADE 1.454, FDE 2.459
+            Coupa (new scene): ADE 1.732, FDE 3.164
+            
+
+            Epoch 2/20
+            Train Loss: 2.2116
+
+            Test (video0 split): ADE 1.248, FDE 2.065
+            Video1 (same scene): ADE 1.240, FDE 2.071
+            Coupa (new scene): ADE 1.617, FDE 2.892
+            
+
+            Epoch 3/20
+            Train Loss: 2.1150
+
+            Test (video0 split): ADE 1.179, FDE 1.953
+            Video1 (same scene): ADE 1.191, FDE 1.963
+            Coupa (new scene): ADE 1.514, FDE 2.678
+            
+
+            Epoch 4/20
+            Train Loss: 2.0721
+
+            Test (video0 split): ADE 1.198, FDE 1.970
+            Video1 (same scene): ADE 1.214, FDE 1.995
+            Coupa (new scene): ADE 1.530, FDE 2.642
+            
+
+            Epoch 5/20
+            Train Loss: 2.0287
+
+            Test (video0 split): ADE 1.161, FDE 1.901
+            Video1 (same scene): ADE 1.188, FDE 1.948
+            Coupa (new scene): ADE 1.511, FDE 2.652
+            
+
+            Epoch 6/20
+            Train Loss: 2.0080
+
+            Test (video0 split): ADE 1.188, FDE 1.996
+            Video1 (same scene): ADE 1.215, FDE 2.040
+            Coupa (new scene): ADE 1.562, FDE 2.736
+            
+
+            Epoch 7/20
+            Train Loss: 1.9990
+
+            Test (video0 split): ADE 1.160, FDE 1.906
+            Video1 (same scene): ADE 1.188, FDE 1.954
+            Coupa (new scene): ADE 1.472, FDE 2.540
+            
+
+            Epoch 8/20
+            Train Loss: 1.9526
+
+            Test (video0 split): ADE 1.145, FDE 1.867
+            Video1 (same scene): ADE 1.160, FDE 1.886
+            Coupa (new scene): ADE 1.447, FDE 2.466
+            
+
+            Epoch 9/20
+            Train Loss: 1.9342
+
+            Test (video0 split): ADE 1.159, FDE 1.909
+            Video1 (same scene): ADE 1.195, FDE 1.978
+            Coupa (new scene): ADE 1.465, FDE 2.506
+            
+
+            Epoch 10/20
+            Train Loss: 1.9142
+
+            Test (video0 split): ADE 1.148, FDE 1.915
+            Video1 (same scene): ADE 1.167, FDE 1.930
+            Coupa (new scene): ADE 1.505, FDE 2.617
+            
+
+            Epoch 11/20
+            Train Loss: 1.9020
+
+            Test (video0 split): ADE 1.166, FDE 1.912
+            Video1 (same scene): ADE 1.207, FDE 1.977
+            Coupa (new scene): ADE 1.486, FDE 2.517
+            
+
+            Epoch 12/20
+            Train Loss: 1.8776
+
+            Test (video0 split): ADE 1.111, FDE 1.812
+            Video1 (same scene): ADE 1.124, FDE 1.832
+            Coupa (new scene): ADE 1.437, FDE 2.452
+            
+
+            Epoch 13/20
+            Train Loss: 1.8607
+
+            Test (video0 split): ADE 1.117, FDE 1.830
+            Video1 (same scene): ADE 1.140, FDE 1.859
+            Coupa (new scene): ADE 1.489, FDE 2.553
+            
+
+            Epoch 14/20
+            Train Loss: 1.8475
+
+            Test (video0 split): ADE 1.113, FDE 1.816
+            Video1 (same scene): ADE 1.128, FDE 1.831
+            Coupa (new scene): ADE 1.444, FDE 2.454
+            
+
+            Epoch 15/20
+            Train Loss: 1.8353
+
+            Test (video0 split): ADE 1.112, FDE 1.805
+            Video1 (same scene): ADE 1.125, FDE 1.811
+            Coupa (new scene): ADE 1.470, FDE 2.487
+            
+
+            Epoch 16/20
+            Train Loss: 1.8192
+
+            Test (video0 split): ADE 1.122, FDE 1.831
+            Video1 (same scene): ADE 1.154, FDE 1.882
+            Coupa (new scene): ADE 1.493, FDE 2.534
+            
+
+            Epoch 17/20
+            Train Loss: 1.8148
+
+            Test (video0 split): ADE 1.116, FDE 1.830
+            Video1 (same scene): ADE 1.138, FDE 1.865
+            Coupa (new scene): ADE 1.494, FDE 2.534
+            
+
+            Epoch 18/20
+            Train Loss: 1.8040
+
+            Test (video0 split): ADE 1.119, FDE 1.829
+            Video1 (same scene): ADE 1.143, FDE 1.853
+            Coupa (new scene): ADE 1.474, FDE 2.517
+            
+
+            Epoch 19/20
+            Train Loss: 1.7930
+
+            Test (video0 split): ADE 1.112, FDE 1.810
+            Video1 (same scene): ADE 1.147, FDE 1.874
+            Coupa (new scene): ADE 1.485, FDE 2.514
+            
+
+            Epoch 20/20
+            Train Loss: 1.7886
+
+            Test (video0 split): ADE 1.098, FDE 1.796
+            Video1 (same scene): ADE 1.110, FDE 1.811
+            Coupa (new scene): ADE 1.478, FDE 2.515
+            
+Model saved as models/trajectory_lstm.pth
