@@ -26,28 +26,15 @@
 
 '''Visualisation from pickles'''
 import pickle
+from src.experiment.main_experiment import run_episode
 
-from src.sim.environment import Environment
-from src.sim.visualizer import Visualizer
-
-# load trajectories
 with open("data/processed/bookstore_video0_traj.pkl", "rb") as f:
     traj = pickle.load(f)
 
-env = Environment(traj)
-vis = Visualizer()
+mode = "astar"
 
-max_steps=1000
+res = run_episode(traj, mode=mode, render=True)
 
-for _ in range(max_steps):
-    env.step()
-    state = env.get_state()
-    vis.render(state)
-
-    if env.robot.reached_goal():
-        print("Goal reached!")
-        break
-
-    if env.robot.is_stuck():
-        print("Goal unreachable due to crowd")
-        break
+print("\n=== RESULT ===")
+for k, v in res.items():
+    print(f"{k}: {v}")
