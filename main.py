@@ -53,16 +53,16 @@
 # print(out.shape)  # should be (4, 12, 2)
 
 '''Visualisation from pickles'''
-# import pickle
-# from src.experiment.main_experiment import run_episode
+import pickle
+from src.experiment.main_experiment import run_episode
 
-# with open("data/processed/bookstore_video0_traj.pkl", "rb") as f:
-#     traj = pickle.load(f)
+with open("data/processed/bookstore_video0_traj.pkl", "rb") as f:
+    traj = pickle.load(f)
 
-# mode = "greedy"
+mode = "astar"
 
-# res = run_episode(traj, mode=mode, render=True)
+res = run_episode(traj, mode=mode, render=True)
 
-# print("\n=== RESULT ===")
-# for k, v in res.items():
-#     print(f"{k}: {v}")
+print("\n=== RESULT ===")
+for k, v in res.items():
+    print(f"{k}: {v}")

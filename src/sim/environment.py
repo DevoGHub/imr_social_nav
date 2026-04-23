@@ -2,6 +2,7 @@ import random
 import math
 from src.sim.costmap import compute_cost
 from src.planner.astar import AStarPlanner
+from src.model.predictor import Predictor
 
 
 class Human:
@@ -77,7 +78,7 @@ class Environment:
         # cost weight
         self.alpha = 50
 
-        self.predictor = None
+        self.predictor = Predictor("models/trajectory_lstm.pth")
 
     def step(self, mode="astar"):
         prev_pos = self.robot.pos.copy()
