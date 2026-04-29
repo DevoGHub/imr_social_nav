@@ -1,0 +1,117 @@
+
+<div style="padding: 1rem 0;">
+  <h2 class="sr-only">Full three-scene navigation comparison: Greedy vs A* vs LSTM A* across Bookstore Video0, Bookstore Video1, and Coupa Video0</h2>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 1.5rem;">
+    <span style="display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--color-text-secondary);"><span style="width: 10px; height: 10px; border-radius: 2px; background: #888780;"></span>Greedy</span>
+    <span style="display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--color-text-secondary);"><span style="width: 10px; height: 10px; border-radius: 2px; background: #378ADD;"></span>A*</span>
+    <span style="display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--color-text-secondary);"><span style="width: 10px; height: 10px; border-radius: 2px; background: #1D9E75;"></span>LSTM A*</span>
+  </div>
+
+  <p style="font-size: 13px; color: var(--color-text-secondary); margin: 0 0 0.5rem;">Success rate (%)</p>
+  <div style="position: relative; width: 100%; height: 210px; margin-bottom: 2rem;">
+    <canvas id="successChart" role="img" aria-label="Success rates by scene. Greedy: 76, 48, 80. A*: 100, 100, 100. LSTM: 100, 100, 100.">Success rates across three scenes.</canvas>
+  </div>
+
+  <p style="font-size: 13px; color: var(--color-text-secondary); margin: 0 0 0.5rem;">Avg collisions per run</p>
+  <div style="position: relative; width: 100%; height: 210px; margin-bottom: 2rem;">
+    <canvas id="collChart" role="img" aria-label="Average collisions by scene. Greedy: 0, 0.02, 0. A*: 1.49, 1.80, 0.90. LSTM: 1.03, 1.37, 0.70.">Average collisions across three scenes.</canvas>
+  </div>
+
+  <p style="font-size: 13px; color: var(--color-text-secondary); margin: 0 0 0.5rem;">Collision reduction: LSTM A* vs plain A* (%)</p>
+  <div style="position: relative; width: 100%; height: 180px; margin-bottom: 2rem;">
+    <canvas id="reductionChart" role="img" aria-label="Collision reduction: Bookstore V0 31%, Bookstore V1 24%, Coupa V0 22%.">Collision reduction percentages across scenes.</canvas>
+  </div>
+
+  <p style="font-size: 13px; color: var(--color-text-secondary); margin: 0 0 0.5rem;">LSTM prediction ADE vs collision reduction (relationship)</p>
+  <div style="position: relative; width: 100%; height: 220px; margin-bottom: 1rem;">
+    <canvas id="scatterChart" role="img" aria-label="Scatter plot: lower ADE correlates with higher collision reduction. Bookstore V0: ADE 1.10, reduction 31%. Bookstore V1: ADE 1.11, reduction 24%. Coupa: ADE 1.48, reduction 22%.">ADE vs collision reduction scatter.</canvas>
+  </div>
+  <p style="font-size: 11px; color: var(--color-text-tertiary); margin: 0;">Bubble size proportional to scene crowd density (avg A* collisions)</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const scenes = ['Bookstore V0\n(train scene)', 'Bookstore V1\n(out-of-video)', 'Coupa V0\n(out-of-scene)'];
+const gray = '#888780', blue = '#378ADD', teal = '#1D9E75';
+
+const baseOpts = {
+  responsive: true, maintainAspectRatio: false,
+  plugins: { legend: { display: false } },
+  scales: {
+    x: { grid: { display: false }, ticks: { color: '#888780', font: { size: 11 } } },
+    y: { grid: { color: 'rgba(128,128,128,0.12)' }, ticks: { color: '#888780', font: { size: 11 } } }
+  }
+};
+
+new Chart(document.getElementById('successChart'), {
+  type: 'bar',
+  data: {
+    labels: scenes,
+    datasets: [
+      { label: 'Greedy', data: [76, 48, 80], backgroundColor: gray, borderRadius: 3 },
+      { label: 'A*', data: [100, 100, 100], backgroundColor: blue, borderRadius: 3 },
+      { label: 'LSTM A*', data: [100, 100, 100], backgroundColor: teal, borderRadius: 3 },
+    ]
+  },
+  options: { ...baseOpts, scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, min: 0, max: 115, ticks: { color: '#888780', font: { size: 11 }, callback: v => v + '%' } } } }
+});
+
+new Chart(document.getElementById('collChart'), {
+  type: 'bar',
+  data: {
+    labels: scenes,
+    datasets: [
+      { label: 'Greedy', data: [0.00, 0.02, 0.00], backgroundColor: gray, borderRadius: 3 },
+      { label: 'A*', data: [1.49, 1.80, 0.90], backgroundColor: blue, borderRadius: 3 },
+      { label: 'LSTM A*', data: [1.03, 1.37, 0.90], backgroundColor: teal, borderRadius: 3 },
+    ]
+  },
+  options: { ...baseOpts, scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, min: 0, ticks: { color: '#888780', font: { size: 11 }, callback: v => v.toFixed(2) } } } }
+});
+
+new Chart(document.getElementById('reductionChart'), {
+  type: 'bar',
+  data: {
+    labels: scenes,
+    datasets: [{ label: 'Collision reduction', data: [30.9, 23.9, 22.2], backgroundColor: [teal, teal, teal], borderRadius: 3 }]
+  },
+  options: { ...baseOpts, scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, min: 0, max: 45, ticks: { color: '#888780', font: { size: 11 }, callback: v => v + '%' } } } }
+});
+
+new Chart(document.getElementById('scatterChart'), {
+  type: 'bubble',
+  data: {
+    datasets: [{
+      label: 'Scenes',
+      data: [
+        { x: 1.10, y: 30.9, r: 10 },
+        { x: 1.11, y: 23.9, r: 13 },
+        { x: 1.48, y: 22.2, r: 7  },
+      ],
+      backgroundColor: [teal + 'cc', blue + 'cc', gray + 'cc'],
+      borderColor: [teal, blue, gray],
+      borderWidth: 1.5
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => {
+            const names = ['Bookstore V0', 'Bookstore V1', 'Coupa V0'];
+            return `${names[ctx.dataIndex]}: ADE ${ctx.raw.x.toFixed(2)}, reduction ${ctx.raw.y.toFixed(1)}%`;
+          }
+        }
+      }
+    },
+    scales: {
+      x: { title: { display: true, text: 'LSTM prediction ADE (lower = better)', color: '#888780', font: { size: 11 } }, ticks: { color: '#888780', font: { size: 11 }, callback: v => v.toFixed(2) }, grid: { color: 'rgba(128,128,128,0.12)' }, min: 1.0, max: 1.65 },
+      y: { title: { display: true, text: 'Collision reduction vs A* (%)', color: '#888780', font: { size: 11 } }, ticks: { color: '#888780', font: { size: 11 }, callback: v => v + '%' }, grid: { color: 'rgba(128,128,128,0.12)' }, min: 15, max: 38 }
+    },
+    layout: { padding: 20 }
+  }
+});
+</script>

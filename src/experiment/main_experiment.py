@@ -5,7 +5,7 @@ import time
 from src.sim.environment import Environment
 from src.sim.visualizer import Visualizer
 
-with open("data/processed/bookstore_video0_traj.pkl", "rb") as f:
+with open("data/processed/coupa_video0_traj.pkl", "rb") as f:
     traj = pickle.load(f)
 
 
@@ -41,7 +41,7 @@ def run_episode(traj, mode, max_steps=1000, render=False):
 
 if __name__ == "__main__":
     modes = ["greedy", "astar", "lstm"]
-    num_runs = 5
+    num_runs = 100
     max_steps = 1000
 
     results = {mode: [] for mode in modes}

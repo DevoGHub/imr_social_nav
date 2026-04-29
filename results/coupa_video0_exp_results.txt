@@ -1,0 +1,529 @@
+Run 1/100
+  greedy  | success=True | coll=0 | min_dist=44.90
+  astar   | success=True | coll=0 | min_dist=38.00
+  lstm    | success=True | coll=0 | min_dist=38.00
+
+Run 2/100
+  greedy  | success=True | coll=0 | min_dist=41.52
+  astar   | success=True | coll=0 | min_dist=30.28
+  lstm    | success=True | coll=0 | min_dist=56.30
+
+Run 3/100
+  greedy  | success=True | coll=0 | min_dist=58.19
+  astar   | success=True | coll=0 | min_dist=69.44
+  lstm    | success=True | coll=0 | min_dist=69.44
+
+Run 4/100
+  greedy  | success=True | coll=0 | min_dist=21.76
+  astar   | success=True | coll=2 | min_dist=9.81
+  lstm    | success=True | coll=0 | min_dist=12.31
+
+Run 5/100
+  greedy  | success=True | coll=0 | min_dist=34.50
+  astar   | success=True | coll=0 | min_dist=31.09
+  lstm    | success=True | coll=0 | min_dist=30.55
+
+Run 6/100
+  greedy  | success=True | coll=0 | min_dist=30.99
+  astar   | success=True | coll=0 | min_dist=13.38
+  lstm    | success=True | coll=0 | min_dist=13.38
+
+Run 7/100
+  greedy  | success=True | coll=0 | min_dist=36.06
+  astar   | success=True | coll=0 | min_dist=33.22
+  lstm    | success=True | coll=0 | min_dist=33.22
+
+Run 8/100
+  greedy  | success=True | coll=0 | min_dist=190.46
+  astar   | success=True | coll=0 | min_dist=154.36
+  lstm    | success=True | coll=0 | min_dist=154.36
+
+Run 9/100
+  greedy  | success=True | coll=0 | min_dist=73.56
+  astar   | success=True | coll=0 | min_dist=71.49
+  lstm    | success=True | coll=0 | min_dist=71.49
+
+Run 10/100
+  greedy  | success=True | coll=0 | min_dist=27.88
+  astar   | success=True | coll=6 | min_dist=2.46
+  lstm    | success=True | coll=0 | min_dist=32.35
+
+Run 11/100
+  greedy  | success=False | coll=0 | min_dist=44.29
+  astar   | success=True | coll=1 | min_dist=5.88
+  lstm    | success=True | coll=1 | min_dist=5.88
+
+Run 12/100
+  greedy  | success=True | coll=0 | min_dist=42.72
+  astar   | success=True | coll=0 | min_dist=35.10
+  lstm    | success=True | coll=0 | min_dist=35.10
+
+Run 13/100
+  greedy  | success=True | coll=0 | min_dist=30.10
+  astar   | success=True | coll=2 | min_dist=7.32
+  lstm    | success=True | coll=0 | min_dist=32.79
+
+Run 14/100
+  greedy  | success=False | coll=0 | min_dist=25.06
+  astar   | success=True | coll=4 | min_dist=6.10
+  lstm    | success=True | coll=4 | min_dist=6.09
+
+Run 15/100
+  greedy  | success=True | coll=0 | min_dist=51.55
+  astar   | success=True | coll=0 | min_dist=53.96
+  lstm    | success=True | coll=0 | min_dist=53.96
+
+Run 16/100
+  greedy  | success=True | coll=0 | min_dist=48.81
+  astar   | success=True | coll=0 | min_dist=64.49
+  lstm    | success=True | coll=0 | min_dist=64.49
+
+Run 17/100
+  greedy  | success=True | coll=0 | min_dist=64.35
+  astar   | success=True | coll=0 | min_dist=65.16
+  lstm    | success=True | coll=0 | min_dist=65.16
+
+Run 18/100
+  greedy  | success=True | coll=0 | min_dist=27.73
+  astar   | success=True | coll=0 | min_dist=46.21
+  lstm    | success=True | coll=0 | min_dist=10.67
+
+Run 19/100
+  greedy  | success=True | coll=0 | min_dist=27.50
+  astar   | success=True | coll=0 | min_dist=10.19
+  lstm    | success=True | coll=0 | min_dist=10.26
+
+Run 20/100
+  greedy  | success=True | coll=0 | min_dist=35.44
+  astar   | success=True | coll=0 | min_dist=37.57
+  lstm    | success=True | coll=0 | min_dist=56.50
+
+Run 21/100
+  greedy  | success=True | coll=0 | min_dist=29.74
+  astar   | success=True | coll=0 | min_dist=30.93
+  lstm    | success=True | coll=0 | min_dist=30.93
+
+Run 22/100
+  greedy  | success=True | coll=0 | min_dist=54.57
+  astar   | success=True | coll=0 | min_dist=52.02
+  lstm    | success=True | coll=0 | min_dist=52.02
+
+Run 23/100
+  greedy  | success=True | coll=0 | min_dist=26.96
+  astar   | success=True | coll=0 | min_dist=16.27
+  lstm    | success=True | coll=0 | min_dist=15.45
+
+Run 24/100
+  greedy  | success=True | coll=0 | min_dist=30.45
+  astar   | success=True | coll=0 | min_dist=14.68
+  lstm    | success=True | coll=3 | min_dist=7.31
+
+Run 25/100
+  greedy  | success=True | coll=0 | min_dist=44.88
+  astar   | success=True | coll=0 | min_dist=14.47
+  lstm    | success=True | coll=0 | min_dist=54.88
+
+Run 26/100
+  greedy  | success=True | coll=0 | min_dist=33.81
+  astar   | success=True | coll=5 | min_dist=2.35
+  lstm    | success=True | coll=0 | min_dist=10.38
+
+Run 27/100
+  greedy  | success=True | coll=0 | min_dist=39.89
+  astar   | success=True | coll=0 | min_dist=28.66
+  lstm    | success=True | coll=0 | min_dist=28.66
+
+Run 28/100
+  greedy  | success=False | coll=0 | min_dist=34.90
+  astar   | success=True | coll=9 | min_dist=3.81
+  lstm    | success=True | coll=4 | min_dist=6.19
+
+Run 29/100
+  greedy  | success=False | coll=0 | min_dist=30.35
+  astar   | success=True | coll=0 | min_dist=21.79
+  lstm    | success=True | coll=0 | min_dist=21.79
+
+Run 30/100
+  greedy  | success=False | coll=0 | min_dist=39.38
+  astar   | success=True | coll=1 | min_dist=8.10
+  lstm    | success=True | coll=1 | min_dist=8.10
+
+Run 31/100
+  greedy  | success=True | coll=0 | min_dist=30.35
+  astar   | success=True | coll=3 | min_dist=6.03
+  lstm    | success=True | coll=5 | min_dist=3.97
+
+Run 32/100
+  greedy  | success=True | coll=0 | min_dist=35.35
+  astar   | success=True | coll=0 | min_dist=13.06
+  lstm    | success=True | coll=0 | min_dist=13.08
+
+Run 33/100
+  greedy  | success=False | coll=0 | min_dist=29.13
+  astar   | success=True | coll=2 | min_dist=1.42
+  lstm    | success=True | coll=2 | min_dist=1.42
+
+Run 34/100
+  greedy  | success=True | coll=0 | min_dist=48.80
+  astar   | success=True | coll=0 | min_dist=18.84
+  lstm    | success=True | coll=0 | min_dist=43.64
+
+Run 35/100
+  greedy  | success=True | coll=0 | min_dist=33.91
+  astar   | success=True | coll=1 | min_dist=9.24
+  lstm    | success=True | coll=1 | min_dist=9.24
+
+Run 36/100
+  greedy  | success=True | coll=0 | min_dist=34.80
+  astar   | success=True | coll=0 | min_dist=34.88
+  lstm    | success=True | coll=0 | min_dist=34.51
+
+Run 37/100
+  greedy  | success=True | coll=0 | min_dist=130.27
+  astar   | success=True | coll=0 | min_dist=122.43
+  lstm    | success=True | coll=0 | min_dist=122.43
+
+Run 38/100
+  greedy  | success=True | coll=0 | min_dist=103.40
+  astar   | success=True | coll=0 | min_dist=23.93
+  lstm    | success=True | coll=0 | min_dist=23.93
+
+Run 39/100
+  greedy  | success=False | coll=0 | min_dist=44.15
+  astar   | success=True | coll=9 | min_dist=5.63
+  lstm    | success=True | coll=9 | min_dist=5.63
+
+Run 40/100
+  greedy  | success=True | coll=0 | min_dist=46.17
+  astar   | success=True | coll=0 | min_dist=36.16
+  lstm    | success=True | coll=0 | min_dist=34.97
+
+Run 41/100
+  greedy  | success=True | coll=0 | min_dist=29.84
+  astar   | success=True | coll=0 | min_dist=12.36
+  lstm    | success=True | coll=0 | min_dist=29.29
+
+Run 42/100
+  greedy  | success=True | coll=0 | min_dist=61.41
+  astar   | success=True | coll=0 | min_dist=60.09
+  lstm    | success=True | coll=0 | min_dist=60.09
+
+Run 43/100
+  greedy  | success=True | coll=0 | min_dist=26.91
+  astar   | success=True | coll=3 | min_dist=6.54
+  lstm    | success=True | coll=0 | min_dist=51.47
+
+Run 44/100
+  greedy  | success=True | coll=0 | min_dist=27.37
+  astar   | success=True | coll=0 | min_dist=15.72
+  lstm    | success=True | coll=0 | min_dist=19.03
+
+Run 45/100
+  greedy  | success=True | coll=0 | min_dist=24.32
+  astar   | success=True | coll=0 | min_dist=11.28
+  lstm    | success=True | coll=0 | min_dist=11.28
+
+Run 46/100
+  greedy  | success=True | coll=0 | min_dist=66.35
+  astar   | success=True | coll=0 | min_dist=62.92
+  lstm    | success=True | coll=0 | min_dist=62.92
+
+Run 47/100
+  greedy  | success=True | coll=0 | min_dist=35.54
+  astar   | success=True | coll=0 | min_dist=11.31
+  lstm    | success=True | coll=0 | min_dist=12.01
+
+Run 48/100
+  greedy  | success=True | coll=0 | min_dist=57.85
+  astar   | success=True | coll=0 | min_dist=45.09
+  lstm    | success=True | coll=0 | min_dist=47.11
+
+Run 49/100
+  greedy  | success=True | coll=0 | min_dist=52.69
+  astar   | success=True | coll=0 | min_dist=42.51
+  lstm    | success=True | coll=0 | min_dist=42.51
+
+Run 50/100
+  greedy  | success=False | coll=0 | min_dist=35.91
+  astar   | success=True | coll=1 | min_dist=9.41
+  lstm    | success=True | coll=1 | min_dist=9.41
+
+Run 51/100
+  greedy  | success=True | coll=0 | min_dist=33.28
+  astar   | success=True | coll=0 | min_dist=10.63
+  lstm    | success=True | coll=4 | min_dist=7.11
+
+Run 52/100
+  greedy  | success=True | coll=0 | min_dist=67.80
+  astar   | success=True | coll=0 | min_dist=65.06
+  lstm    | success=True | coll=0 | min_dist=65.06
+
+Run 53/100
+  greedy  | success=True | coll=0 | min_dist=30.38
+  astar   | success=True | coll=3 | min_dist=3.46
+  lstm    | success=True | coll=3 | min_dist=3.46
+
+Run 54/100
+  greedy  | success=True | coll=0 | min_dist=29.70
+  astar   | success=True | coll=0 | min_dist=51.86
+  lstm    | success=True | coll=0 | min_dist=50.25
+
+Run 55/100
+  greedy  | success=True | coll=0 | min_dist=36.83
+  astar   | success=True | coll=4 | min_dist=2.39
+  lstm    | success=True | coll=0 | min_dist=65.17
+
+Run 56/100
+  greedy  | success=True | coll=0 | min_dist=137.24
+  astar   | success=True | coll=0 | min_dist=97.48
+  lstm    | success=True | coll=0 | min_dist=97.48
+
+Run 57/100
+  greedy  | success=True | coll=0 | min_dist=31.69
+  astar   | success=True | coll=0 | min_dist=29.94
+  lstm    | success=True | coll=0 | min_dist=29.94
+
+Run 58/100
+  greedy  | success=True | coll=0 | min_dist=107.22
+  astar   | success=True | coll=0 | min_dist=114.29
+  lstm    | success=True | coll=0 | min_dist=114.29
+
+Run 59/100
+  greedy  | success=False | coll=0 | min_dist=30.42
+  astar   | success=True | coll=1 | min_dist=9.44
+  lstm    | success=True | coll=1 | min_dist=9.44
+
+Run 60/100
+  greedy  | success=True | coll=0 | min_dist=31.13
+  astar   | success=True | coll=2 | min_dist=4.56
+  lstm    | success=True | coll=1 | min_dist=8.73
+
+Run 61/100
+  greedy  | success=False | coll=0 | min_dist=43.18
+  astar   | success=True | coll=1 | min_dist=7.52
+  lstm    | success=True | coll=1 | min_dist=5.57
+
+Run 62/100
+  greedy  | success=True | coll=0 | min_dist=42.61
+  astar   | success=True | coll=0 | min_dist=36.78
+  lstm    | success=True | coll=0 | min_dist=59.01
+
+Run 63/100
+  greedy  | success=True | coll=0 | min_dist=33.11
+  astar   | success=True | coll=0 | min_dist=15.18
+  lstm    | success=True | coll=0 | min_dist=67.61
+
+Run 64/100
+  greedy  | success=True | coll=0 | min_dist=29.33
+  astar   | success=True | coll=7 | min_dist=2.73
+  lstm    | success=True | coll=0 | min_dist=51.81
+
+Run 65/100
+  greedy  | success=True | coll=0 | min_dist=29.88
+  astar   | success=True | coll=0 | min_dist=26.26
+  lstm    | success=True | coll=0 | min_dist=26.26
+
+Run 66/100
+  greedy  | success=False | coll=0 | min_dist=30.39
+  astar   | success=True | coll=1 | min_dist=5.56
+  lstm    | success=True | coll=1 | min_dist=5.56
+
+Run 67/100
+  greedy  | success=True | coll=0 | min_dist=99.62
+  astar   | success=True | coll=0 | min_dist=100.57
+  lstm    | success=True | coll=0 | min_dist=100.57
+
+Run 68/100
+  greedy  | success=True | coll=0 | min_dist=23.53
+  astar   | success=True | coll=3 | min_dist=5.67
+  lstm    | success=True | coll=2 | min_dist=5.03
+
+Run 69/100
+  greedy  | success=True | coll=0 | min_dist=27.45
+  astar   | success=True | coll=0 | min_dist=13.54
+  lstm    | success=True | coll=0 | min_dist=54.50
+
+Run 70/100
+  greedy  | success=True | coll=0 | min_dist=87.63
+  astar   | success=True | coll=0 | min_dist=109.18
+  lstm    | success=True | coll=0 | min_dist=109.18
+
+Run 71/100
+  greedy  | success=True | coll=0 | min_dist=37.37
+  astar   | success=True | coll=0 | min_dist=88.82
+  lstm    | success=True | coll=0 | min_dist=88.82
+
+Run 72/100
+  greedy  | success=False | coll=0 | min_dist=11.04
+  astar   | success=True | coll=1 | min_dist=8.75
+  lstm    | success=True | coll=8 | min_dist=2.45
+
+Run 73/100
+  greedy  | success=False | coll=0 | min_dist=37.16
+  astar   | success=True | coll=1 | min_dist=8.83
+  lstm    | success=True | coll=1 | min_dist=8.60
+
+Run 74/100
+  greedy  | success=False | coll=0 | min_dist=28.07
+  astar   | success=True | coll=0 | min_dist=19.01
+  lstm    | success=True | coll=0 | min_dist=19.01
+
+Run 75/100
+  greedy  | success=True | coll=0 | min_dist=28.13
+  astar   | success=True | coll=0 | min_dist=51.47
+  lstm    | success=True | coll=0 | min_dist=51.47
+
+Run 76/100
+  greedy  | success=True | coll=0 | min_dist=48.43
+  astar   | success=True | coll=0 | min_dist=26.78
+  lstm    | success=True | coll=0 | min_dist=26.78
+
+Run 77/100
+  greedy  | success=False | coll=0 | min_dist=35.10
+  astar   | success=True | coll=1 | min_dist=7.61
+  lstm    | success=True | coll=1 | min_dist=7.61
+
+Run 78/100
+  greedy  | success=True | coll=0 | min_dist=44.26
+  astar   | success=True | coll=0 | min_dist=46.72
+  lstm    | success=True | coll=0 | min_dist=46.72
+
+Run 79/100
+  greedy  | success=True | coll=0 | min_dist=73.77
+  astar   | success=True | coll=0 | min_dist=63.04
+  lstm    | success=True | coll=0 | min_dist=63.04
+
+Run 80/100
+  greedy  | success=False | coll=0 | min_dist=42.94
+  astar   | success=True | coll=2 | min_dist=3.02
+  lstm    | success=True | coll=1 | min_dist=5.40
+
+Run 81/100
+  greedy  | success=True | coll=0 | min_dist=143.71
+  astar   | success=True | coll=0 | min_dist=143.35
+  lstm    | success=True | coll=0 | min_dist=143.35
+
+Run 82/100
+  greedy  | success=True | coll=0 | min_dist=33.04
+  astar   | success=True | coll=0 | min_dist=56.78
+  lstm    | success=True | coll=0 | min_dist=58.58
+
+Run 83/100
+  greedy  | success=True | coll=0 | min_dist=39.33
+  astar   | success=True | coll=0 | min_dist=42.36
+  lstm    | success=True | coll=0 | min_dist=42.36
+
+Run 84/100
+  greedy  | success=False | coll=0 | min_dist=40.67
+  astar   | success=True | coll=2 | min_dist=3.76
+  lstm    | success=True | coll=1 | min_dist=6.40
+
+Run 85/100
+  greedy  | success=True | coll=0 | min_dist=31.72
+  astar   | success=True | coll=0 | min_dist=41.46
+  lstm    | success=True | coll=0 | min_dist=34.77
+
+Run 86/100
+  greedy  | success=True | coll=0 | min_dist=64.01
+  astar   | success=True | coll=0 | min_dist=37.46
+  lstm    | success=True | coll=0 | min_dist=77.61
+
+Run 87/100
+  greedy  | success=False | coll=0 | min_dist=12.88
+  astar   | success=True | coll=1 | min_dist=8.09
+  lstm    | success=True | coll=6 | min_dist=1.92
+
+Run 88/100
+  greedy  | success=False | coll=0 | min_dist=54.82
+  astar   | success=True | coll=1 | min_dist=8.45
+  lstm    | success=True | coll=1 | min_dist=8.45
+
+Run 89/100
+  greedy  | success=True | coll=0 | min_dist=115.66
+  astar   | success=True | coll=0 | min_dist=115.54
+  lstm    | success=True | coll=0 | min_dist=115.54
+
+Run 90/100
+  greedy  | success=True | coll=0 | min_dist=121.30
+  astar   | success=True | coll=0 | min_dist=62.89
+  lstm    | success=True | coll=0 | min_dist=62.89
+
+Run 91/100
+  greedy  | success=True | coll=0 | min_dist=29.23
+  astar   | success=True | coll=0 | min_dist=17.33
+  lstm    | success=True | coll=0 | min_dist=65.43
+
+Run 92/100
+  greedy  | success=True | coll=0 | min_dist=48.85
+  astar   | success=True | coll=0 | min_dist=50.49
+  lstm    | success=True | coll=0 | min_dist=50.49
+
+Run 93/100
+  greedy  | success=True | coll=0 | min_dist=46.06
+  astar   | success=True | coll=5 | min_dist=6.56
+  lstm    | success=True | coll=4 | min_dist=4.27
+
+Run 94/100
+  greedy  | success=True | coll=0 | min_dist=100.89
+  astar   | success=True | coll=0 | min_dist=102.79
+  lstm    | success=True | coll=0 | min_dist=102.79
+
+Run 95/100
+  greedy  | success=False | coll=0 | min_dist=54.14
+  astar   | success=True | coll=1 | min_dist=8.42
+  lstm    | success=True | coll=1 | min_dist=8.42
+
+Run 96/100
+  greedy  | success=True | coll=0 | min_dist=25.85
+  astar   | success=True | coll=2 | min_dist=8.96
+  lstm    | success=True | coll=0 | min_dist=11.50
+
+Run 97/100
+  greedy  | success=True | coll=0 | min_dist=55.67
+  astar   | success=True | coll=0 | min_dist=61.99
+  lstm    | success=True | coll=0 | min_dist=61.99
+
+Run 98/100
+  greedy  | success=True | coll=0 | min_dist=34.35
+  astar   | success=True | coll=2 | min_dist=7.89
+  lstm    | success=True | coll=2 | min_dist=7.89
+
+Run 99/100
+  greedy  | success=True | coll=0 | min_dist=46.49
+  astar   | success=True | coll=0 | min_dist=30.15
+  lstm    | success=True | coll=0 | min_dist=47.13
+
+Run 100/100
+  greedy  | success=True | coll=0 | min_dist=56.93
+  astar   | success=True | coll=0 | min_dist=61.28
+  lstm    | success=True | coll=0 | min_dist=61.28
+
+=== GREEDY ===
+success_rate             : 0.8000
+avg_collisions           : 0.0000
+avg_collisions_success   : 0.0000
+avg_min_dist             : 48.0111
+median_min_dist          : 37.1564
+avg_path_len             : 959.8750
+avg_steps_success        : 191.9750
+avg_runtime              : 0.0441
+
+=== ASTAR ===
+success_rate             : 1.0000
+avg_collisions           : 0.9000
+avg_collisions_success   : 0.9000
+avg_min_dist             : 34.3959
+median_min_dist          : 23.9299
+avg_path_len             : 766.6000
+avg_steps_success        : 165.4800
+avg_runtime              : 0.1876
+
+=== LSTM ===
+success_rate             : 1.0000
+avg_collisions           : 0.7000
+avg_collisions_success   : 0.7000
+avg_min_dist             : 39.5497
+median_min_dist          : 33.2220
+avg_path_len             : 820.4000
+avg_steps_success        : 177.0200
+avg_runtime              : 6.7906
