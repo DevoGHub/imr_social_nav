@@ -76,12 +76,15 @@ class Environment:
         self.steps_taken = 0
 
         # cost weight
-        self.alpha = 50
+        self.alpha = 100
 
         self.predictor = Predictor("models/trajectory_lstm.pth")
 
     def step(self, mode="astar"):
         prev_pos = self.robot.pos.copy()
+
+        if self.predictor is not None:
+            self.predictor.reset_cache()
 
         # move humans
         for human in self.humans:
@@ -89,6 +92,17 @@ class Environment:
 
         human_positions = [h.get_position() for h in self.humans]
         human_histories = [h.get_history() for h in self.humans]
+
+        self.predicted_trajs = None
+
+        if mode == "lstm" and self.predictor is not None:
+            self.predicted_trajs = [
+                self.predictor.predict(hist)
+                for hist in human_histories
+            ]
+
+        if self.predictor is not None:
+            self.predictor.precomputed = self.predicted_trajs
 
         # choose behavior
         if mode == "greedy":
@@ -159,7 +173,7 @@ class Environment:
             self.robot.pos = list(best_pos)
 
     def astar_step(self, human_positions, human_histories=None):
-        if self.time % 5 == 0 or self.path_index >= len(self.path):
+        if self.time % 20 == 0 or self.path_index >= len(self.path):
             self.path = self.planner.plan(
                 self.robot.pos,
                 self.goal,

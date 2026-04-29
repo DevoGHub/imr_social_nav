@@ -40,8 +40,8 @@ def run_episode(traj, mode, max_steps=1000, render=False):
 
 
 if __name__ == "__main__":
-    modes = ["greedy", "astar"]
-    num_runs = 100
+    modes = ["greedy", "astar", "lstm"]
+    num_runs = 5
     max_steps = 1000
 
     results = {mode: [] for mode in modes}

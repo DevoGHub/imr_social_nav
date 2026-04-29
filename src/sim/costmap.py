@@ -1,33 +1,47 @@
 import math
 
+RADIUS = 80  # tune this
+
 def compute_cost(point, human_positions, human_histories=None, predictor=None):
     cost = 0.0
 
+    px, py = point  # unpack once (faster)
+
+    use_prediction = predictor is not None and human_histories is not None
+
     for i, (hx, hy) in enumerate(human_positions):
 
-        # CASE 1: No prediction
-        if predictor is None or human_histories is None:
-            dist = math.sqrt((point[0] - hx)**2 + (point[1] - hy)**2)
+        # Radius filtering
+        dx = px - hx
+        dy = py - hy
+        dist_to_human = math.sqrt(dx*dx + dy*dy)
 
-            if dist < 1:
-                dist = 1
+        if dist_to_human > RADIUS:
+            continue
 
+        # CASE 1: No prediction (greedy / normal A*)
+        if not use_prediction:
+            dist = max(dist_to_human, 1.0)
             cost += math.exp(-dist / 20)
 
-        # CASE 2: Prediction enabled
+        # CASE 2: Prediction enabled (LSTM)
         else:
-            history = human_histories[i]
-            pred_traj = predictor.predict(history)  # shape: (T, 2)
+            # use precomputed if available
+            if hasattr(predictor, "precomputed") and predictor.precomputed is not None:
+                pred_traj = predictor.precomputed[i]
+            else:
+                pred_traj = predictor.predict(human_histories[i])
 
-            for t, (px, py) in enumerate(pred_traj):
-                dist = math.sqrt((point[0] - px)**2 + (point[1] - py)**2)
+            for t, (fx, fy) in enumerate(pred_traj[:6]):
+                dx = px - fx
+                dy = py - fy
+                dist = math.sqrt(dx*dx + dy*dy)
+                dist = max(dist, 1.0)
 
-                if dist < 1:
-                    dist = 1
+                if dist < 10:
+                    cost += 1000
 
-                # decay future importance
                 weight = 0.9 ** t
-
-                cost += weight * math.exp(-dist / 20)
+                cost += weight * 50 * math.exp(-dist / 10)
 
     return cost

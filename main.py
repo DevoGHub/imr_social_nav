@@ -59,7 +59,7 @@ from src.experiment.main_experiment import run_episode
 with open("data/processed/bookstore_video0_traj.pkl", "rb") as f:
     traj = pickle.load(f)
 
-mode = "astar"
+mode = "lstm"
 
 res = run_episode(traj, mode=mode, render=True)
 
