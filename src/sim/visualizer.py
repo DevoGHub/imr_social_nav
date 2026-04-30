@@ -6,7 +6,7 @@ class Visualizer:
         plt.ion()
         self.fig, self.ax = plt.subplots()
 
-    def render(self, state):
+    def render(self, state, title="None"):
         self.ax.clear()
 
         humans = state["humans"]
@@ -25,7 +25,7 @@ class Visualizer:
         self.ax.scatter(goal[0], goal[1], c="green", label="Goal")
 
         self.ax.legend()
-        self.ax.set_title("Simulation")
+        self.ax.set_title("Simulation" if not title else title)
 
         plt.draw()
         plt.pause(0.01)
