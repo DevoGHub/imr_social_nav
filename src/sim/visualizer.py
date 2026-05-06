@@ -6,7 +6,7 @@ class Visualizer:
         plt.ion()
         self.fig, self.ax = plt.subplots()
 
-    def render(self, state, title="None"):
+    def render(self, state, title=None):
         self.ax.clear()
 
         humans = state["humans"]

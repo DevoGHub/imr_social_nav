@@ -5,7 +5,7 @@ import time
 from src.sim.environment import Environment
 from src.sim.visualizer import Visualizer
 
-with open("data/processed/coupa_video0_traj.pkl", "rb") as f:
+with open("data/processed/bookstore_video0_traj.pkl", "rb") as f:
     traj = pickle.load(f)
 
 
@@ -21,7 +21,7 @@ def run_episode(traj, mode, max_steps=1000, render=False):
         env.step(mode=mode)
 
         if render:
-            vis.render(env.get_state())
+            vis.render(env.get_state(), title=f"{mode.capitalize()} Simulation")
 
         if env.robot.reached_goal():
             success = True
@@ -41,7 +41,7 @@ def run_episode(traj, mode, max_steps=1000, render=False):
 
 if __name__ == "__main__":
     modes = ["greedy", "astar", "lstm"]
-    num_runs = 100
+    num_runs = 1
     max_steps = 1000
 
     results = {mode: [] for mode in modes}
@@ -50,11 +50,11 @@ if __name__ == "__main__":
         print(f"\nRun {i+1}/{num_runs}")
 
         for mode in modes:
-            seed = i
+            seed = i # 36 in bkv0 for best result run
             random.seed(seed)
             np.random.seed(seed)
 
-            res = run_episode(traj, mode, max_steps=max_steps, render=False)
+            res = run_episode(traj, mode, max_steps=max_steps, render=True)
             results[mode].append(res)
 
             print(
