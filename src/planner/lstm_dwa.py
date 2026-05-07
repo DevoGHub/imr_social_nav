@@ -1,14 +1,3 @@
-"""
-LSTM-Guided Dynamic Window Approach (LSTM DWA) Planner
---------------------------------------------------------
-Extends DWAPlanner by enabling LSTM-based pedestrian trajectory
-predictions in the costmap scoring. The only difference from plain
-DWA is that use_prediction=True is set by default, which causes
-_get_cost() to pass human_histories and predictor through to
-compute_cost(), inflating the dynamic window cost around predicted
-future pedestrian positions rather than only current ones.
-"""
-
 from src.planner.dwa import DWAPlanner
 
 

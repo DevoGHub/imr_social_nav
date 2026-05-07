@@ -1,502 +1,702 @@
 Run 1/100
   greedy  | success=True | coll=0 | min_dist=53.13
   astar   | success=True | coll=0 | min_dist=47.78
-  lstm    | success=True | coll=0 | min_dist=47.78
+  lstm_astar | success=True | coll=0 | min_dist=47.78
+  dwa     | success=True | coll=0 | min_dist=37.10
+  lstm_dwa | success=True | coll=0 | min_dist=33.17
 
 Run 2/100
   greedy  | success=True | coll=0 | min_dist=31.32
   astar   | success=True | coll=6 | min_dist=2.62
-  lstm    | success=True | coll=0 | min_dist=12.76
+  lstm_astar | success=True | coll=0 | min_dist=12.76
+  dwa     | success=True | coll=0 | min_dist=12.37
+  lstm_dwa | success=True | coll=1 | min_dist=9.53
 
 Run 3/100
   greedy  | success=True | coll=0 | min_dist=53.65
   astar   | success=True | coll=0 | min_dist=49.60
-  lstm    | success=True | coll=0 | min_dist=49.60
+  lstm_astar | success=True | coll=0 | min_dist=49.60
+  dwa     | success=True | coll=0 | min_dist=37.43
+  lstm_dwa | success=True | coll=0 | min_dist=41.47
 
 Run 4/100
   greedy  | success=True | coll=0 | min_dist=34.86
   astar   | success=True | coll=1 | min_dist=9.47
-  lstm    | success=True | coll=1 | min_dist=9.47
+  lstm_astar | success=True | coll=1 | min_dist=9.47
+  dwa     | success=True | coll=0 | min_dist=17.98
+  lstm_dwa | success=True | coll=0 | min_dist=27.15
 
 Run 5/100
   greedy  | success=True | coll=0 | min_dist=30.88
   astar   | success=True | coll=0 | min_dist=26.77
-  lstm    | success=True | coll=0 | min_dist=22.39
+  lstm_astar | success=True | coll=0 | min_dist=22.39
+  dwa     | success=True | coll=7 | min_dist=4.64
+  lstm_dwa | success=True | coll=6 | min_dist=2.05
 
 Run 6/100
   greedy  | success=False | coll=0 | min_dist=35.27
   astar   | success=True | coll=2 | min_dist=5.97
-  lstm    | success=True | coll=1 | min_dist=6.55
+  lstm_astar | success=True | coll=1 | min_dist=6.55
+  dwa     | success=True | coll=8 | min_dist=2.42
+  lstm_dwa | success=True | coll=7 | min_dist=3.69
 
 Run 7/100
   greedy  | success=True | coll=0 | min_dist=30.50
   astar   | success=True | coll=0 | min_dist=18.82
-  lstm    | success=True | coll=0 | min_dist=19.48
+  lstm_astar | success=True | coll=0 | min_dist=19.48
+  dwa     | success=True | coll=13 | min_dist=2.14
+  lstm_dwa | success=True | coll=14 | min_dist=1.65
 
 Run 8/100
   greedy  | success=False | coll=0 | min_dist=32.63
   astar   | success=True | coll=1 | min_dist=7.61
-  lstm    | success=True | coll=1 | min_dist=7.04
+  lstm_astar | success=True | coll=1 | min_dist=7.04
+  dwa     | success=True | coll=5 | min_dist=2.23
+  lstm_dwa | success=True | coll=5 | min_dist=0.51
 
 Run 9/100
   greedy  | success=True | coll=0 | min_dist=28.09
   astar   | success=True | coll=0 | min_dist=20.55
-  lstm    | success=True | coll=0 | min_dist=33.16
+  lstm_astar | success=True | coll=0 | min_dist=33.16
+  dwa     | success=True | coll=1 | min_dist=6.43
+  lstm_dwa | success=True | coll=0 | min_dist=10.24
 
 Run 10/100
   greedy  | success=False | coll=0 | min_dist=56.07
   astar   | success=True | coll=0 | min_dist=11.96
-  lstm    | success=True | coll=0 | min_dist=12.34
+  lstm_astar | success=True | coll=0 | min_dist=12.34
+  dwa     | success=True | coll=11 | min_dist=3.16
+  lstm_dwa | success=True | coll=6 | min_dist=3.71
 
 Run 11/100
   greedy  | success=True | coll=0 | min_dist=29.59
   astar   | success=True | coll=0 | min_dist=23.43
-  lstm    | success=True | coll=0 | min_dist=23.43
+  lstm_astar | success=True | coll=0 | min_dist=23.43
+  dwa     | success=True | coll=2 | min_dist=7.30
+  lstm_dwa | success=True | coll=0 | min_dist=11.92
 
 Run 12/100
   greedy  | success=False | coll=0 | min_dist=31.66
   astar   | success=True | coll=3 | min_dist=1.35
-  lstm    | success=True | coll=3 | min_dist=1.35
+  lstm_astar | success=True | coll=3 | min_dist=1.35
+  dwa     | success=True | coll=2 | min_dist=2.15
+  lstm_dwa | success=True | coll=3 | min_dist=2.25
 
 Run 13/100
   greedy  | success=True | coll=0 | min_dist=60.48
   astar   | success=True | coll=0 | min_dist=45.72
-  lstm    | success=True | coll=0 | min_dist=42.67
+  lstm_astar | success=True | coll=0 | min_dist=42.67
+  dwa     | success=True | coll=0 | min_dist=56.38
+  lstm_dwa | success=True | coll=0 | min_dist=60.04
 
 Run 14/100
   greedy  | success=False | coll=0 | min_dist=31.10
   astar   | success=True | coll=5 | min_dist=3.20
-  lstm    | success=True | coll=5 | min_dist=3.20
+  lstm_astar | success=True | coll=5 | min_dist=3.20
+  dwa     | success=True | coll=1 | min_dist=9.48
+  lstm_dwa | success=True | coll=1 | min_dist=8.00
 
 Run 15/100
   greedy  | success=False | coll=0 | min_dist=24.09
   astar   | success=True | coll=2 | min_dist=5.85
-  lstm    | success=True | coll=2 | min_dist=5.86
+  lstm_astar | success=True | coll=2 | min_dist=5.86
+  dwa     | success=True | coll=10 | min_dist=1.85
+  lstm_dwa | success=True | coll=16 | min_dist=0.29
 
 Run 16/100
   greedy  | success=True | coll=0 | min_dist=80.30
   astar   | success=True | coll=0 | min_dist=77.83
-  lstm    | success=True | coll=0 | min_dist=77.83
+  lstm_astar | success=True | coll=0 | min_dist=77.83
+  dwa     | success=True | coll=0 | min_dist=51.20
+  lstm_dwa | success=True | coll=0 | min_dist=52.70
 
 Run 17/100
   greedy  | success=False | coll=0 | min_dist=27.41
   astar   | success=True | coll=0 | min_dist=13.00
-  lstm    | success=True | coll=0 | min_dist=13.00
+  lstm_astar | success=True | coll=0 | min_dist=13.00
+  dwa     | success=True | coll=3 | min_dist=2.47
+  lstm_dwa | success=True | coll=1 | min_dist=9.82
 
 Run 18/100
   greedy  | success=False | coll=0 | min_dist=34.60
   astar   | success=True | coll=0 | min_dist=18.37
-  lstm    | success=True | coll=0 | min_dist=17.97
+  lstm_astar | success=True | coll=0 | min_dist=17.97
+  dwa     | success=True | coll=3 | min_dist=6.29
+  lstm_dwa | success=True | coll=3 | min_dist=7.28
 
 Run 19/100
   greedy  | success=False | coll=0 | min_dist=22.24
   astar   | success=True | coll=1 | min_dist=5.65
-  lstm    | success=True | coll=1 | min_dist=5.65
+  lstm_astar | success=True | coll=1 | min_dist=5.65
+  dwa     | success=True | coll=9 | min_dist=3.19
+  lstm_dwa | success=True | coll=1 | min_dist=7.26
 
 Run 20/100
   greedy  | success=True | coll=0 | min_dist=94.15
   astar   | success=True | coll=0 | min_dist=90.38
-  lstm    | success=True | coll=0 | min_dist=90.38
+  lstm_astar | success=True | coll=0 | min_dist=90.38
+  dwa     | success=True | coll=0 | min_dist=61.21
+  lstm_dwa | success=True | coll=0 | min_dist=80.00
 
 Run 21/100
   greedy  | success=True | coll=0 | min_dist=80.01
   astar   | success=True | coll=0 | min_dist=36.27
-  lstm    | success=True | coll=0 | min_dist=36.27
+  lstm_astar | success=True | coll=0 | min_dist=36.27
+  dwa     | success=True | coll=1 | min_dist=9.33
+  lstm_dwa | success=True | coll=0 | min_dist=22.23
 
 Run 22/100
   greedy  | success=True | coll=0 | min_dist=41.72
   astar   | success=True | coll=0 | min_dist=71.69
-  lstm    | success=True | coll=0 | min_dist=71.69
+  lstm_astar | success=True | coll=0 | min_dist=71.69
+  dwa     | success=True | coll=3 | min_dist=1.85
+  lstm_dwa | success=True | coll=3 | min_dist=2.75
 
 Run 23/100
   greedy  | success=False | coll=0 | min_dist=35.93
   astar   | success=True | coll=2 | min_dist=8.51
-  lstm    | success=True | coll=2 | min_dist=8.51
+  lstm_astar | success=True | coll=2 | min_dist=8.51
+  dwa     | success=True | coll=0 | min_dist=14.84
+  lstm_dwa | success=True | coll=2 | min_dist=7.45
 
 Run 24/100
   greedy  | success=True | coll=0 | min_dist=51.39
   astar   | success=True | coll=0 | min_dist=27.64
-  lstm    | success=True | coll=0 | min_dist=27.64
+  lstm_astar | success=True | coll=0 | min_dist=27.64
+  dwa     | success=True | coll=0 | min_dist=50.59
+  lstm_dwa | success=True | coll=0 | min_dist=49.70
 
 Run 25/100
   greedy  | success=True | coll=0 | min_dist=35.32
   astar   | success=True | coll=0 | min_dist=48.16
-  lstm    | success=True | coll=0 | min_dist=47.98
+  lstm_astar | success=True | coll=0 | min_dist=47.98
+  dwa     | success=True | coll=4 | min_dist=3.99
+  lstm_dwa | success=True | coll=0 | min_dist=25.45
 
 Run 26/100
   greedy  | success=False | coll=0 | min_dist=25.14
   astar   | success=True | coll=1 | min_dist=9.81
-  lstm    | success=True | coll=1 | min_dist=9.15
+  lstm_astar | success=True | coll=1 | min_dist=9.15
+  dwa     | success=True | coll=3 | min_dist=6.15
+  lstm_dwa | success=True | coll=4 | min_dist=4.78
 
 Run 27/100
   greedy  | success=False | coll=0 | min_dist=29.44
   astar   | success=True | coll=3 | min_dist=5.04
-  lstm    | success=True | coll=3 | min_dist=5.04
+  lstm_astar | success=True | coll=3 | min_dist=5.04
+  dwa     | success=True | coll=9 | min_dist=2.39
+  lstm_dwa | success=True | coll=4 | min_dist=3.60
 
 Run 28/100
   greedy  | success=True | coll=0 | min_dist=23.04
   astar   | success=True | coll=4 | min_dist=3.64
-  lstm    | success=True | coll=4 | min_dist=3.64
+  lstm_astar | success=True | coll=4 | min_dist=3.64
+  dwa     | success=True | coll=1 | min_dist=4.30
+  lstm_dwa | success=True | coll=0 | min_dist=17.16
 
 Run 29/100
   greedy  | success=False | coll=0 | min_dist=38.56
   astar   | success=True | coll=1 | min_dist=6.73
-  lstm    | success=True | coll=1 | min_dist=6.73
+  lstm_astar | success=True | coll=1 | min_dist=6.73
+  dwa     | success=True | coll=3 | min_dist=3.41
+  lstm_dwa | success=True | coll=3 | min_dist=3.80
 
 Run 30/100
   greedy  | success=True | coll=0 | min_dist=28.46
   astar   | success=True | coll=0 | min_dist=22.28
-  lstm    | success=True | coll=0 | min_dist=22.28
+  lstm_astar | success=True | coll=0 | min_dist=22.28
+  dwa     | success=True | coll=0 | min_dist=23.33
+  lstm_dwa | success=True | coll=0 | min_dist=23.22
 
 Run 31/100
   greedy  | success=True | coll=0 | min_dist=65.97
   astar   | success=True | coll=0 | min_dist=11.83
-  lstm    | success=True | coll=0 | min_dist=17.61
+  lstm_astar | success=True | coll=0 | min_dist=17.61
+  dwa     | success=True | coll=0 | min_dist=63.97
+  lstm_dwa | success=True | coll=0 | min_dist=64.44
 
 Run 32/100
   greedy  | success=False | coll=0 | min_dist=29.49
   astar   | success=True | coll=7 | min_dist=1.01
-  lstm    | success=True | coll=0 | min_dist=24.79
+  lstm_astar | success=True | coll=0 | min_dist=24.79
+  dwa     | success=True | coll=6 | min_dist=2.23
+  lstm_dwa | success=True | coll=1 | min_dist=9.97
 
 Run 33/100
   greedy  | success=True | coll=0 | min_dist=29.18
   astar   | success=True | coll=0 | min_dist=39.65
-  lstm    | success=True | coll=0 | min_dist=38.72
+  lstm_astar | success=True | coll=0 | min_dist=38.72
+  dwa     | success=True | coll=1 | min_dist=9.77
+  lstm_dwa | success=True | coll=2 | min_dist=9.28
 
 Run 34/100
   greedy  | success=False | coll=0 | min_dist=30.14
   astar   | success=True | coll=0 | min_dist=33.65
-  lstm    | success=True | coll=0 | min_dist=33.65
+  lstm_astar | success=True | coll=0 | min_dist=33.65
+  dwa     | success=True | coll=0 | min_dist=37.33
+  lstm_dwa | success=True | coll=0 | min_dist=28.93
 
 Run 35/100
   greedy  | success=False | coll=0 | min_dist=40.71
   astar   | success=True | coll=11 | min_dist=0.40
-  lstm    | success=True | coll=8 | min_dist=2.03
+  lstm_astar | success=True | coll=8 | min_dist=2.03
+  dwa     | success=True | coll=8 | min_dist=1.76
+  lstm_dwa | success=True | coll=9 | min_dist=0.84
 
 Run 36/100
   greedy  | success=True | coll=0 | min_dist=63.08
   astar   | success=True | coll=0 | min_dist=53.45
-  lstm    | success=True | coll=0 | min_dist=53.45
+  lstm_astar | success=True | coll=0 | min_dist=53.45
+  dwa     | success=True | coll=0 | min_dist=35.53
+  lstm_dwa | success=True | coll=0 | min_dist=37.13
 
 Run 37/100
   greedy  | success=True | coll=0 | min_dist=32.88
   astar   | success=True | coll=0 | min_dist=43.18
-  lstm    | success=True | coll=0 | min_dist=66.18
+  lstm_astar | success=True | coll=0 | min_dist=66.18
+  dwa     | success=True | coll=0 | min_dist=18.54
+  lstm_dwa | success=True | coll=0 | min_dist=17.94
 
 Run 38/100
   greedy  | success=False | coll=0 | min_dist=56.54
   astar   | success=True | coll=2 | min_dist=8.53
-  lstm    | success=True | coll=2 | min_dist=8.53
+  lstm_astar | success=True | coll=2 | min_dist=8.53
+  dwa     | success=True | coll=8 | min_dist=2.21
+  lstm_dwa | success=False | coll=6 | min_dist=1.58
 
 Run 39/100
   greedy  | success=True | coll=0 | min_dist=30.11
   astar   | success=True | coll=3 | min_dist=3.88
-  lstm    | success=True | coll=0 | min_dist=16.28
+  lstm_astar | success=True | coll=0 | min_dist=16.28
+  dwa     | success=True | coll=4 | min_dist=5.81
+  lstm_dwa | success=True | coll=4 | min_dist=6.45
 
 Run 40/100
   greedy  | success=False | coll=0 | min_dist=25.66
   astar   | success=True | coll=3 | min_dist=1.66
-  lstm    | success=True | coll=3 | min_dist=0.55
+  lstm_astar | success=True | coll=3 | min_dist=0.55
+  dwa     | success=True | coll=0 | min_dist=11.48
+  lstm_dwa | success=True | coll=4 | min_dist=2.56
 
 Run 41/100
   greedy  | success=True | coll=0 | min_dist=69.86
   astar   | success=True | coll=0 | min_dist=32.09
-  lstm    | success=True | coll=0 | min_dist=66.16
+  lstm_astar | success=True | coll=0 | min_dist=66.16
+  dwa     | success=True | coll=0 | min_dist=43.71
+  lstm_dwa | success=True | coll=0 | min_dist=39.43
 
 Run 42/100
   greedy  | success=True | coll=0 | min_dist=43.87
   astar   | success=True | coll=0 | min_dist=67.82
-  lstm    | success=True | coll=0 | min_dist=67.82
+  lstm_astar | success=True | coll=0 | min_dist=67.82
+  dwa     | success=True | coll=3 | min_dist=0.95
+  lstm_dwa | success=True | coll=2 | min_dist=8.07
 
 Run 43/100
   greedy  | success=False | coll=0 | min_dist=27.86
   astar   | success=True | coll=2 | min_dist=4.95
-  lstm    | success=True | coll=1 | min_dist=6.13
+  lstm_astar | success=True | coll=1 | min_dist=6.13
+  dwa     | success=True | coll=7 | min_dist=2.80
+  lstm_dwa | success=True | coll=4 | min_dist=4.08
 
 Run 44/100
   greedy  | success=False | coll=0 | min_dist=44.35
   astar   | success=True | coll=10 | min_dist=1.63
-  lstm    | success=True | coll=7 | min_dist=0.84
+  lstm_astar | success=True | coll=7 | min_dist=0.84
+  dwa     | success=True | coll=5 | min_dist=5.38
+  lstm_dwa | success=True | coll=3 | min_dist=5.33
 
 Run 45/100
   greedy  | success=True | coll=0 | min_dist=78.85
   astar   | success=True | coll=0 | min_dist=72.32
-  lstm    | success=True | coll=0 | min_dist=73.01
+  lstm_astar | success=True | coll=0 | min_dist=73.01
+  dwa     | success=True | coll=0 | min_dist=64.64
+  lstm_dwa | success=True | coll=0 | min_dist=74.20
 
 Run 46/100
   greedy  | success=False | coll=0 | min_dist=32.71
   astar   | success=True | coll=3 | min_dist=3.49
-  lstm    | success=True | coll=3 | min_dist=3.52
+  lstm_astar | success=True | coll=3 | min_dist=3.52
+  dwa     | success=True | coll=1 | min_dist=5.95
+  lstm_dwa | success=True | coll=2 | min_dist=2.66
 
 Run 47/100
   greedy  | success=False | coll=0 | min_dist=37.37
   astar   | success=True | coll=2 | min_dist=8.39
-  lstm    | success=True | coll=2 | min_dist=8.39
+  lstm_astar | success=True | coll=2 | min_dist=8.39
+  dwa     | success=True | coll=8 | min_dist=3.37
+  lstm_dwa | success=True | coll=10 | min_dist=2.53
 
 Run 48/100
   greedy  | success=True | coll=0 | min_dist=51.47
   astar   | success=True | coll=0 | min_dist=36.26
-  lstm    | success=True | coll=0 | min_dist=36.26
+  lstm_astar | success=True | coll=0 | min_dist=36.26
+  dwa     | success=True | coll=5 | min_dist=7.05
+  lstm_dwa | success=True | coll=6 | min_dist=7.49
 
 Run 49/100
   greedy  | success=True | coll=0 | min_dist=55.00
   astar   | success=True | coll=0 | min_dist=44.45
-  lstm    | success=True | coll=0 | min_dist=44.45
+  lstm_astar | success=True | coll=0 | min_dist=44.45
+  dwa     | success=True | coll=0 | min_dist=16.46
+  lstm_dwa | success=True | coll=0 | min_dist=15.96
 
 Run 50/100
   greedy  | success=False | coll=0 | min_dist=28.08
   astar   | success=True | coll=0 | min_dist=10.13
-  lstm    | success=True | coll=0 | min_dist=10.67
+  lstm_astar | success=True | coll=0 | min_dist=10.67
+  dwa     | success=True | coll=0 | min_dist=12.01
+  lstm_dwa | success=True | coll=3 | min_dist=7.29
 
 Run 51/100
   greedy  | success=True | coll=0 | min_dist=29.98
   astar   | success=True | coll=0 | min_dist=10.52
-  lstm    | success=True | coll=0 | min_dist=11.58
+  lstm_astar | success=True | coll=0 | min_dist=11.58
+  dwa     | success=True | coll=3 | min_dist=3.62
+  lstm_dwa | success=True | coll=5 | min_dist=0.94
 
 Run 52/100
   greedy  | success=False | coll=0 | min_dist=28.97
   astar   | success=True | coll=1 | min_dist=5.09
-  lstm    | success=True | coll=1 | min_dist=5.95
+  lstm_astar | success=True | coll=1 | min_dist=5.95
+  dwa     | success=True | coll=1 | min_dist=6.87
+  lstm_dwa | success=True | coll=1 | min_dist=6.89
 
 Run 53/100
   greedy  | success=False | coll=0 | min_dist=43.67
   astar   | success=True | coll=4 | min_dist=4.97
-  lstm    | success=True | coll=4 | min_dist=4.97
+  lstm_astar | success=True | coll=4 | min_dist=4.97
+  dwa     | success=True | coll=3 | min_dist=2.96
+  lstm_dwa | success=True | coll=4 | min_dist=2.16
 
 Run 54/100
   greedy  | success=False | coll=0 | min_dist=29.88
   astar   | success=True | coll=6 | min_dist=4.33
-  lstm    | success=True | coll=1 | min_dist=8.17
+  lstm_astar | success=True | coll=1 | min_dist=8.17
+  dwa     | success=True | coll=12 | min_dist=2.14
+  lstm_dwa | success=True | coll=11 | min_dist=3.80
 
 Run 55/100
   greedy  | success=False | coll=0 | min_dist=43.06
   astar   | success=True | coll=3 | min_dist=5.43
-  lstm    | success=True | coll=3 | min_dist=5.43
+  lstm_astar | success=True | coll=3 | min_dist=5.43
+  dwa     | success=True | coll=7 | min_dist=1.21
+  lstm_dwa | success=True | coll=7 | min_dist=1.93
 
 Run 56/100
   greedy  | success=False | coll=0 | min_dist=32.21
   astar   | success=True | coll=7 | min_dist=2.87
-  lstm    | success=True | coll=8 | min_dist=3.47
+  lstm_astar | success=True | coll=8 | min_dist=3.47
+  dwa     | success=True | coll=2 | min_dist=8.80
+  lstm_dwa | success=True | coll=7 | min_dist=2.63
 
 Run 57/100
   greedy  | success=False | coll=0 | min_dist=59.16
   astar   | success=True | coll=1 | min_dist=8.86
-  lstm    | success=True | coll=1 | min_dist=8.86
+  lstm_astar | success=True | coll=1 | min_dist=8.86
+  dwa     | success=True | coll=8 | min_dist=2.01
+  lstm_dwa | success=True | coll=9 | min_dist=0.45
 
 Run 58/100
   greedy  | success=True | coll=0 | min_dist=36.72
   astar   | success=True | coll=0 | min_dist=34.35
-  lstm    | success=True | coll=0 | min_dist=34.35
+  lstm_astar | success=True | coll=0 | min_dist=34.35
+  dwa     | success=True | coll=2 | min_dist=5.07
+  lstm_dwa | success=True | coll=2 | min_dist=4.93
 
 Run 59/100
   greedy  | success=True | coll=0 | min_dist=25.58
   astar   | success=True | coll=0 | min_dist=13.41
-  lstm    | success=True | coll=0 | min_dist=47.13
+  lstm_astar | success=True | coll=0 | min_dist=47.13
+  dwa     | success=True | coll=0 | min_dist=11.49
+  lstm_dwa | success=True | coll=0 | min_dist=10.47
 
 Run 60/100
   greedy  | success=False | coll=0 | min_dist=31.30
   astar   | success=True | coll=6 | min_dist=3.87
-  lstm    | success=True | coll=6 | min_dist=3.87
+  lstm_astar | success=True | coll=6 | min_dist=3.87
+  dwa     | success=True | coll=4 | min_dist=2.83
+  lstm_dwa | success=True | coll=4 | min_dist=2.68
 
 Run 61/100
   greedy  | success=False | coll=0 | min_dist=27.65
   astar   | success=True | coll=0 | min_dist=20.17
-  lstm    | success=True | coll=0 | min_dist=21.83
+  lstm_astar | success=True | coll=0 | min_dist=21.83
+  dwa     | success=True | coll=0 | min_dist=17.67
+  lstm_dwa | success=True | coll=0 | min_dist=17.67
 
 Run 62/100
   greedy  | success=False | coll=0 | min_dist=30.87
   astar   | success=True | coll=3 | min_dist=3.60
-  lstm    | success=True | coll=3 | min_dist=3.60
+  lstm_astar | success=True | coll=3 | min_dist=3.60
+  dwa     | success=True | coll=5 | min_dist=4.56
+  lstm_dwa | success=True | coll=6 | min_dist=1.68
 
 Run 63/100
   greedy  | success=True | coll=0 | min_dist=43.12
   astar   | success=True | coll=0 | min_dist=38.42
-  lstm    | success=True | coll=0 | min_dist=47.16
+  lstm_astar | success=True | coll=0 | min_dist=47.16
+  dwa     | success=True | coll=10 | min_dist=1.34
+  lstm_dwa | success=True | coll=10 | min_dist=2.05
 
 Run 64/100
   greedy  | success=False | coll=0 | min_dist=31.55
   astar   | success=True | coll=0 | min_dist=18.82
-  lstm    | success=True | coll=0 | min_dist=16.85
+  lstm_astar | success=True | coll=0 | min_dist=16.85
+  dwa     | success=True | coll=4 | min_dist=3.29
+  lstm_dwa | success=True | coll=4 | min_dist=1.92
 
 Run 65/100
   greedy  | success=True | coll=0 | min_dist=45.28
   astar   | success=True | coll=0 | min_dist=14.20
-  lstm    | success=True | coll=0 | min_dist=54.53
+  lstm_astar | success=True | coll=0 | min_dist=54.53
+  dwa     | success=True | coll=0 | min_dist=39.32
+  lstm_dwa | success=True | coll=0 | min_dist=40.02
 
 Run 66/100
   greedy  | success=False | coll=0 | min_dist=28.92
   astar   | success=True | coll=1 | min_dist=6.96
-  lstm    | success=True | coll=1 | min_dist=6.82
+  lstm_astar | success=True | coll=1 | min_dist=6.82
+  dwa     | success=True | coll=11 | min_dist=1.93
+  lstm_dwa | success=False | coll=8 | min_dist=2.48
 
 Run 67/100
   greedy  | success=True | coll=0 | min_dist=33.09
   astar   | success=True | coll=0 | min_dist=23.66
-  lstm    | success=True | coll=0 | min_dist=69.03
+  lstm_astar | success=True | coll=0 | min_dist=69.03
+  dwa     | success=True | coll=5 | min_dist=5.02
+  lstm_dwa | success=True | coll=7 | min_dist=2.12
 
 Run 68/100
   greedy  | success=False | coll=0 | min_dist=32.08
   astar   | success=True | coll=7 | min_dist=2.36
-  lstm    | success=True | coll=3 | min_dist=4.60
+  lstm_astar | success=True | coll=3 | min_dist=4.60
+  dwa     | success=True | coll=1 | min_dist=5.57
+  lstm_dwa | success=True | coll=1 | min_dist=5.81
 
 Run 69/100
   greedy  | success=False | coll=0 | min_dist=33.03
   astar   | success=True | coll=1 | min_dist=7.83
-  lstm    | success=True | coll=1 | min_dist=7.87
+  lstm_astar | success=True | coll=1 | min_dist=7.87
+  dwa     | success=True | coll=0 | min_dist=10.17
+  lstm_dwa | success=True | coll=0 | min_dist=10.18
 
 Run 70/100
   greedy  | success=False | coll=0 | min_dist=24.87
   astar   | success=True | coll=1 | min_dist=5.63
-  lstm    | success=True | coll=1 | min_dist=9.55
+  lstm_astar | success=True | coll=1 | min_dist=9.55
+  dwa     | success=True | coll=9 | min_dist=6.16
+  lstm_dwa | success=False | coll=3 | min_dist=7.60
 
 Run 71/100
   greedy  | success=True | coll=0 | min_dist=65.50
   astar   | success=True | coll=0 | min_dist=65.54
-  lstm    | success=True | coll=0 | min_dist=65.54
+  lstm_astar | success=True | coll=0 | min_dist=65.54
+  dwa     | success=True | coll=0 | min_dist=47.35
+  lstm_dwa | success=True | coll=0 | min_dist=60.27
 
 Run 72/100
   greedy  | success=False | coll=0 | min_dist=52.25
   astar   | success=True | coll=4 | min_dist=0.79
-  lstm    | success=True | coll=4 | min_dist=0.79
+  lstm_astar | success=True | coll=4 | min_dist=0.79
+  dwa     | success=True | coll=3 | min_dist=5.22
+  lstm_dwa | success=True | coll=3 | min_dist=6.20
 
 Run 73/100
   greedy  | success=True | coll=0 | min_dist=36.27
   astar   | success=True | coll=0 | min_dist=19.90
-  lstm    | success=True | coll=0 | min_dist=25.75
+  lstm_astar | success=True | coll=0 | min_dist=25.75
+  dwa     | success=True | coll=0 | min_dist=18.83
+  lstm_dwa | success=True | coll=0 | min_dist=17.84
 
 Run 74/100
   greedy  | success=False | coll=0 | min_dist=19.79
   astar   | success=True | coll=4 | min_dist=2.40
-  lstm    | success=True | coll=4 | min_dist=1.42
+  lstm_astar | success=True | coll=4 | min_dist=1.42
+  dwa     | success=True | coll=4 | min_dist=7.84
+  lstm_dwa | success=True | coll=1 | min_dist=8.77
 
 Run 75/100
   greedy  | success=True | coll=0 | min_dist=121.58
   astar   | success=True | coll=0 | min_dist=120.58
-  lstm    | success=True | coll=0 | min_dist=120.58
+  lstm_astar | success=True | coll=0 | min_dist=120.58
+  dwa     | success=True | coll=0 | min_dist=119.93
+  lstm_dwa | success=True | coll=0 | min_dist=119.93
 
 Run 76/100
   greedy  | success=True | coll=0 | min_dist=68.35
   astar   | success=True | coll=0 | min_dist=66.29
-  lstm    | success=True | coll=0 | min_dist=66.29
+  lstm_astar | success=True | coll=0 | min_dist=66.29
+  dwa     | success=True | coll=0 | min_dist=64.22
+  lstm_dwa | success=True | coll=0 | min_dist=64.22
 
 Run 77/100
   greedy  | success=False | coll=0 | min_dist=29.02
   astar   | success=True | coll=2 | min_dist=7.81
-  lstm    | success=True | coll=0 | min_dist=35.64
+  lstm_astar | success=True | coll=0 | min_dist=35.64
+  dwa     | success=True | coll=4 | min_dist=2.20
+  lstm_dwa | success=True | coll=4 | min_dist=2.50
 
 Run 78/100
   greedy  | success=False | coll=0 | min_dist=56.50
   astar   | success=True | coll=6 | min_dist=2.50
-  lstm    | success=True | coll=5 | min_dist=3.22
+  lstm_astar | success=True | coll=5 | min_dist=3.22
+  dwa     | success=True | coll=4 | min_dist=4.30
+  lstm_dwa | success=False | coll=0 | min_dist=52.81
 
 Run 79/100
   greedy  | success=False | coll=0 | min_dist=28.96
   astar   | success=True | coll=11 | min_dist=0.60
-  lstm    | success=True | coll=12 | min_dist=1.87
+  lstm_astar | success=True | coll=12 | min_dist=1.87
+  dwa     | success=True | coll=12 | min_dist=2.15
+  lstm_dwa | success=True | coll=14 | min_dist=1.98
 
 Run 80/100
   greedy  | success=False | coll=0 | min_dist=27.72
   astar   | success=True | coll=6 | min_dist=0.73
-  lstm    | success=True | coll=8 | min_dist=1.20
+  lstm_astar | success=True | coll=8 | min_dist=1.20
+  dwa     | success=True | coll=6 | min_dist=4.86
+  lstm_dwa | success=True | coll=6 | min_dist=5.43
 
 Run 81/100
   greedy  | success=False | coll=2 | min_dist=9.37
   astar   | success=True | coll=6 | min_dist=1.05
-  lstm    | success=True | coll=2 | min_dist=1.70
+  lstm_astar | success=True | coll=2 | min_dist=1.70
+  dwa     | success=True | coll=0 | min_dist=15.74
+  lstm_dwa | success=True | coll=1 | min_dist=9.36
 
 Run 82/100
   greedy  | success=False | coll=0 | min_dist=30.53
   astar   | success=True | coll=5 | min_dist=6.02
-  lstm    | success=True | coll=1 | min_dist=5.85
+  lstm_astar | success=True | coll=1 | min_dist=5.85
+  dwa     | success=True | coll=3 | min_dist=2.10
+  lstm_dwa | success=True | coll=3 | min_dist=3.14
 
 Run 83/100
   greedy  | success=True | coll=0 | min_dist=61.94
   astar   | success=True | coll=0 | min_dist=60.60
-  lstm    | success=True | coll=0 | min_dist=60.60
+  lstm_astar | success=True | coll=0 | min_dist=60.60
+  dwa     | success=True | coll=0 | min_dist=42.20
+  lstm_dwa | success=True | coll=0 | min_dist=59.99
 
 Run 84/100
   greedy  | success=True | coll=0 | min_dist=29.53
   astar   | success=True | coll=2 | min_dist=6.56
-  lstm    | success=True | coll=0 | min_dist=57.15
+  lstm_astar | success=True | coll=0 | min_dist=57.15
+  dwa     | success=True | coll=0 | min_dist=24.31
+  lstm_dwa | success=True | coll=0 | min_dist=24.42
 
 Run 85/100
   greedy  | success=True | coll=0 | min_dist=24.66
   astar   | success=True | coll=0 | min_dist=12.38
-  lstm    | success=True | coll=0 | min_dist=31.77
+  lstm_astar | success=True | coll=0 | min_dist=31.77
+  dwa     | success=True | coll=12 | min_dist=5.33
+  lstm_dwa | success=True | coll=6 | min_dist=5.14
 
 Run 86/100
   greedy  | success=True | coll=0 | min_dist=36.11
   astar   | success=True | coll=0 | min_dist=26.40
-  lstm    | success=True | coll=0 | min_dist=33.92
+  lstm_astar | success=True | coll=0 | min_dist=33.92
+  dwa     | success=True | coll=0 | min_dist=23.53
+  lstm_dwa | success=True | coll=0 | min_dist=22.91
 
 Run 87/100
   greedy  | success=False | coll=0 | min_dist=47.30
   astar   | success=True | coll=1 | min_dist=9.04
-  lstm    | success=True | coll=1 | min_dist=9.04
+  lstm_astar | success=True | coll=1 | min_dist=9.04
+  dwa     | success=True | coll=13 | min_dist=3.12
+  lstm_dwa | success=True | coll=13 | min_dist=3.31
 
 Run 88/100
   greedy  | success=True | coll=0 | min_dist=27.99
   astar   | success=True | coll=0 | min_dist=64.06
-  lstm    | success=True | coll=0 | min_dist=64.06
+  lstm_astar | success=True | coll=0 | min_dist=64.06
+  dwa     | success=True | coll=0 | min_dist=42.77
+  lstm_dwa | success=True | coll=0 | min_dist=42.77
 
 Run 89/100
   greedy  | success=True | coll=0 | min_dist=43.25
   astar   | success=True | coll=2 | min_dist=7.34
-  lstm    | success=True | coll=2 | min_dist=7.34
+  lstm_astar | success=True | coll=2 | min_dist=7.34
+  dwa     | success=True | coll=0 | min_dist=11.03
+  lstm_dwa | success=True | coll=0 | min_dist=13.82
 
 Run 90/100
   greedy  | success=True | coll=0 | min_dist=45.72
   astar   | success=True | coll=0 | min_dist=17.01
-  lstm    | success=True | coll=0 | min_dist=17.01
+  lstm_astar | success=True | coll=0 | min_dist=17.01
+  dwa     | success=True | coll=0 | min_dist=57.97
+  lstm_dwa | success=True | coll=0 | min_dist=59.63
 
 Run 91/100
   greedy  | success=True | coll=0 | min_dist=49.26
   astar   | success=True | coll=0 | min_dist=29.50
-  lstm    | success=True | coll=0 | min_dist=29.50
+  lstm_astar | success=True | coll=0 | min_dist=29.50
+  dwa     | success=True | coll=0 | min_dist=25.05
+  lstm_dwa | success=True | coll=0 | min_dist=24.03
 
 Run 92/100
   greedy  | success=True | coll=0 | min_dist=36.33
   astar   | success=True | coll=2 | min_dist=4.80
-  lstm    | success=True | coll=2 | min_dist=4.80
+  lstm_astar | success=True | coll=2 | min_dist=4.80
+  dwa     | success=True | coll=0 | min_dist=15.47
+  lstm_dwa | success=True | coll=0 | min_dist=32.73
 
 Run 93/100
   greedy  | success=False | coll=0 | min_dist=30.45
   astar   | success=True | coll=8 | min_dist=1.99
-  lstm    | success=True | coll=7 | min_dist=2.60
+  lstm_astar | success=True | coll=7 | min_dist=2.60
+  dwa     | success=True | coll=3 | min_dist=6.29
+  lstm_dwa | success=True | coll=3 | min_dist=6.28
 
 Run 94/100
   greedy  | success=False | coll=0 | min_dist=54.28
   astar   | success=True | coll=4 | min_dist=4.77
-  lstm    | success=True | coll=4 | min_dist=4.77
+  lstm_astar | success=True | coll=4 | min_dist=4.77
+  dwa     | success=True | coll=7 | min_dist=0.91
+  lstm_dwa | success=False | coll=6 | min_dist=3.10
 
 Run 95/100
   greedy  | success=False | coll=0 | min_dist=35.35
   astar   | success=True | coll=0 | min_dist=13.61
-  lstm    | success=True | coll=0 | min_dist=13.67
+  lstm_astar | success=True | coll=0 | min_dist=13.67
+  dwa     | success=True | coll=8 | min_dist=6.21
+  lstm_dwa | success=False | coll=5 | min_dist=4.32
 
 Run 96/100
   greedy  | success=True | coll=0 | min_dist=50.92
   astar   | success=True | coll=0 | min_dist=75.97
-  lstm    | success=True | coll=0 | min_dist=75.97
+  lstm_astar | success=True | coll=0 | min_dist=75.97
+  dwa     | success=True | coll=6 | min_dist=2.04
+  lstm_dwa | success=True | coll=8 | min_dist=2.91
 
 Run 97/100
   greedy  | success=True | coll=0 | min_dist=67.27
   astar   | success=True | coll=0 | min_dist=64.60
-  lstm    | success=True | coll=0 | min_dist=56.84
+  lstm_astar | success=True | coll=0 | min_dist=56.84
+  dwa     | success=True | coll=0 | min_dist=63.17
+  lstm_dwa | success=True | coll=0 | min_dist=63.17
 
 Run 98/100
   greedy  | success=False | coll=0 | min_dist=53.09
   astar   | success=True | coll=1 | min_dist=5.09
-  lstm    | success=True | coll=1 | min_dist=5.09
+  lstm_astar | success=True | coll=1 | min_dist=5.09
+  dwa     | success=True | coll=7 | min_dist=1.89
+  lstm_dwa | success=True | coll=8 | min_dist=2.10
 
 Run 99/100
   greedy  | success=False | coll=0 | min_dist=28.67
   astar   | success=True | coll=0 | min_dist=15.43
-  lstm    | success=True | coll=0 | min_dist=15.43
+  lstm_astar | success=True | coll=0 | min_dist=15.43
+  dwa     | success=True | coll=1 | min_dist=8.70
+  lstm_dwa | success=True | coll=2 | min_dist=7.11
 
 Run 100/100
   greedy  | success=False | coll=0 | min_dist=31.81
   astar   | success=True | coll=0 | min_dist=10.88
-  lstm    | success=True | coll=0 | min_dist=10.88
+  lstm_astar | success=True | coll=0 | min_dist=10.88
+  dwa     | success=True | coll=2 | min_dist=5.57
+  lstm_dwa | success=True | coll=5 | min_dist=2.23
 
 === GREEDY ===
 success_rate             : 0.4800
@@ -506,7 +706,7 @@ avg_min_dist             : 40.7497
 median_min_dist          : 34.6034
 avg_path_len             : 748.1250
 avg_steps_success        : 149.6250
-avg_runtime              : 0.1352
+avg_runtime              : 0.1453
 
 === ASTAR ===
 success_rate             : 1.0000
@@ -516,9 +716,9 @@ avg_min_dist             : 21.6404
 median_min_dist          : 10.5228
 avg_path_len             : 756.2500
 avg_steps_success        : 164.1200
-avg_runtime              : 0.3319
+avg_runtime              : 0.3571
 
-=== LSTM ===
+=== LSTM_ASTAR ===
 success_rate             : 1.0000
 avg_collisions           : 1.3700
 avg_collisions_success   : 1.3700
@@ -526,4 +726,24 @@ avg_min_dist             : 25.2581
 median_min_dist          : 13.6729
 avg_path_len             : 811.9500
 avg_steps_success        : 176.2700
-avg_runtime              : 13.4236
+avg_runtime              : 14.8363
+
+=== DWA ===
+success_rate             : 1.0000
+avg_collisions           : 3.3700
+avg_collisions_success   : 3.3700
+avg_min_dist             : 15.8088
+median_min_dist          : 6.2142
+avg_path_len             : 614.8550
+avg_steps_success        : 120.7400
+avg_runtime              : 0.2468
+
+=== LSTM_DWA ===
+success_rate             : 0.9400
+avg_collisions           : 3.1300
+avg_collisions_success   : 3.0319
+avg_min_dist             : 17.3988
+median_min_dist          : 7.2867
+avg_path_len             : 594.7181
+avg_steps_success        : 185.3085
+avg_runtime              : 19.1030
