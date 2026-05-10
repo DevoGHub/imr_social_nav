@@ -2,6 +2,8 @@ import random
 import math
 from src.sim.costmap import compute_cost
 from src.planner.astar import AStarPlanner
+from src.planner.dwa import DWAPlanner
+from src.planner.lstm_dwa import LSTMDWAPlanner
 from src.model.predictor import Predictor
 
 
@@ -36,6 +38,9 @@ class Robot:
         self.bounds = bounds
         self.prev_dist = float("inf")
         self.stuck_steps = 0
+        # DWA state
+        self.vel = [0.0, 0.0]   # (vx, vy)
+        self.yaw = 0.0           # heading in radians
 
     def reached_goal(self, tol=10):
         dx = self.goal[0] - self.pos[0]
@@ -64,6 +69,14 @@ class Environment:
 
         self.planner = AStarPlanner(
             bounds=(self.min_x, self.max_x, self.min_y, self.max_y)
+        )
+
+        self.dwa_planner = DWAPlanner(
+            max_speed=self.robot.step_size,
+        )
+
+        self.lstm_dwa_planner = LSTMDWAPlanner(
+            max_speed=self.robot.step_size,
         )
 
         self.path = []
@@ -95,7 +108,7 @@ class Environment:
 
         self.predicted_trajs = None
 
-        if mode == "lstm" and self.predictor is not None:
+        if mode in ("lstm_astar", "lstm_dwa") and self.predictor is not None:
             self.predicted_trajs = [
                 self.predictor.predict(hist)
                 for hist in human_histories
@@ -111,8 +124,14 @@ class Environment:
         elif mode == "astar":
             self.astar_step(human_positions)
 
-        elif mode == "lstm":
-            self.lstm_step(human_positions, human_histories)
+        elif mode == "lstm_astar":
+            self.lstm_astar_step(human_positions, human_histories)
+
+        elif mode == "dwa":
+            self.dwa_step(human_positions)
+
+        elif mode == "lstm_dwa":
+            self.lstm_dwa_step(human_positions, human_histories)
 
         # time update
         self.time += 1
@@ -197,8 +216,41 @@ class Environment:
                 self.robot.pos[0] += dx / dist * self.robot.step_size
                 self.robot.pos[1] += dy / dist * self.robot.step_size
 
-    def lstm_step(self, human_positions, human_histories):
+    def lstm_astar_step(self, human_positions, human_histories):
         self.astar_step(human_positions, human_histories)
+
+    def dwa_step(self, human_positions, human_histories=None):
+        nx, ny, nyaw, nvx, nvy = self.dwa_planner.next_position(
+            robot_pos=self.robot.pos,
+            robot_vel=self.robot.vel,
+            robot_yaw=self.robot.yaw,
+            goal=self.goal,
+            human_positions=human_positions,
+            human_histories=None,       # reactive — no prediction
+            predictor=None,
+        )
+        # clamp to bounds
+        nx = max(self.min_x, min(self.max_x, nx))
+        ny = max(self.min_y, min(self.max_y, ny))
+        self.robot.pos  = [nx, ny]
+        self.robot.yaw  = nyaw
+        self.robot.vel  = [nvx, nvy]
+
+    def lstm_dwa_step(self, human_positions, human_histories):
+        nx, ny, nyaw, nvx, nvy = self.lstm_dwa_planner.next_position(
+            robot_pos=self.robot.pos,
+            robot_vel=self.robot.vel,
+            robot_yaw=self.robot.yaw,
+            goal=self.goal,
+            human_positions=human_positions,
+            human_histories=human_histories,
+            predictor=self.predictor,
+        )
+        nx = max(self.min_x, min(self.max_x, nx))
+        ny = max(self.min_y, min(self.max_y, ny))
+        self.robot.pos  = [nx, ny]
+        self.robot.yaw  = nyaw
+        self.robot.vel  = [nvx, nvy]
 
     def get_state(self):
         return {

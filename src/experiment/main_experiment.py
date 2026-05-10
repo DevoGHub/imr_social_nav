@@ -40,7 +40,7 @@ def run_episode(traj, mode, max_steps=1000, render=False):
 
 
 if __name__ == "__main__":
-    modes = ["greedy", "astar", "lstm"]
+    modes = ["greedy", "astar", "lstm_astar", "dwa", "lstm_dwa"]
     num_runs = 1
     max_steps = 1000
 
@@ -50,7 +50,7 @@ if __name__ == "__main__":
         print(f"\nRun {i+1}/{num_runs}")
 
         for mode in modes:
-            seed = i # 36 in bkv0 for best result run
+            seed = 36 # 36 in bkv0 for best result run
             random.seed(seed)
             np.random.seed(seed)
 

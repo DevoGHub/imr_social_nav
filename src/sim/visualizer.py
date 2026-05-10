@@ -25,7 +25,15 @@ class Visualizer:
         self.ax.scatter(goal[0], goal[1], c="green", label="Goal")
 
         self.ax.legend()
-        self.ax.set_title("Simulation" if not title else title)
+        MODE_LABELS = {
+            "greedy":     "Greedy Simulation",
+            "astar":      "Astar Simulation",
+            "lstm_astar": "LSTM A* Simulation",
+            "dwa":        "DWA Simulation",
+            "lstm_dwa":   "LSTM DWA Simulation",
+        }
+        display_title = MODE_LABELS.get(title, title) if title else "Simulation"
+        self.ax.set_title(display_title)
 
         plt.draw()
         plt.pause(0.01)

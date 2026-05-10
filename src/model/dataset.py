@@ -12,14 +12,14 @@ class TrajectoryDataset(Dataset):
         with open(pkl_file, "rb") as f:
             data = pickle.load(f)
 
-        # 🔹 filter using split file
+        # filter using split file
         if id_file is not None:
             with open(id_file, "r") as f:
                 valid_ids = set(line.strip() for line in f)
 
             data = {k: v for k, v in data.items() if str(k) in valid_ids}
 
-        # 🔹 create samples
+        # create samples
         for traj in data.values():
             positions = [(x, y) for _, x, y in traj]
 
